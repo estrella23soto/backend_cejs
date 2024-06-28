@@ -1,4 +1,5 @@
 import { Router,RouterOptions } from "express";
+import { authController } from "../controllers/authController";
  class Authroutes{
     public router:Router;
 
@@ -7,9 +8,10 @@ import { Router,RouterOptions } from "express";
         this.config();
     }
 
-    config(){
-
+    config() {
+        this.router.post('/', authController.iniciarSesion);        
     }
+
  }
 
  const  authroutes = new  Authroutes();

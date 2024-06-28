@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 
 
 import authRoutes from './routes/authRoutes';
+import usuarioRoutes from './routes/usuarioRoutes';
 /*
 * Clase de inicio de nuestra aplicación NodeJsExpress
 * Autor: Curz Esttrella Juarez Soto
@@ -49,6 +50,7 @@ class Server {
     //Configura las rutas
     routes() {
         this.app.use("/", authRoutes);
+        this.app.use("/usuario", usuarioRoutes);
     }
 }
 

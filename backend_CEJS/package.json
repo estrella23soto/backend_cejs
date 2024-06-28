@@ -2,7 +2,6 @@
   "name": "backend_cejs",
   "version": "1.0.0",
   "main": "app.js",
-
   "scripts": {
     "build": "tsc -w",
     "start": "node dist/app.js",
@@ -11,5 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3"
+  }
 }
